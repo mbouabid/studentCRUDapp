@@ -1,0 +1,17 @@
+<button class="btn btn-danger float-right"
+              (click)="riseRenum()">Rénum +10%</button>
+<table class="table table-hover">
+  <tr>
+    <th>Nom </th>
+    <th>Prénom </th>
+    <th>Filière d'études</th>
+    <th>Rénumération stage</th>
+  </tr>
+  <tr *ngFor="let student of students">
+    <td>{{student.fname}}</td>
+    <td>{{student.lname}}</td>
+    <td>{{student.speciality}}</td>
+    <td>{{student.renumeration}}</td>
+  </tr>
+    
+</table>
